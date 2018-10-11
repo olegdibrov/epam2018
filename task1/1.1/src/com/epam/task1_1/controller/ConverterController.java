@@ -1,3 +1,9 @@
+package com.epam.task1_1.controller;
+
+import com.epam.task1_1.input.InputUtility;
+import com.epam.task1_1.model.ConverterModel;
+import com.epam.task1_1.view.ConverterView;
+
 /**
  * Created by maild on 05.10.2018.
  */
@@ -13,7 +19,6 @@ public class ConverterController {
     public void convert(){
         model.setValue(InputUtility.inputValueWithScanner( view, view.INPUT_INT_VALUE));
         model.setNotation(InputUtility.inputValueWithScanner( view, view.INPUT_INT_NOTATION));
-        model.convertValue();
-        view.printMessageAndResult(ConverterView.OUTPUT, model.getConvertedValue());
+        view.printMessageAndResult(ConverterView.OUTPUT, model.convertValue());
     }
 }

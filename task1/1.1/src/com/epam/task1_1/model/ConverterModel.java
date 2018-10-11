@@ -1,18 +1,11 @@
+package com.epam.task1_1.model;
+
 /**
  * Created by maild on 05.10.2018.
  */
 public class ConverterModel {
     private int value;
     private int notation;
-    private String convertedValue = "";
-
-    public String getConvertedValue() {
-        return convertedValue;
-    }
-
-    public void setConvertedValue(String convertedValue) {
-        this.convertedValue = convertedValue;
-    }
 
     public int getValue() {
         return value;
@@ -30,34 +23,35 @@ public class ConverterModel {
         this.notation = notation;
     }
 
-    public void convertValue(){
+    public String convertValue(){
+        String temp = "";
         while (value!=0){
-            String temp = "";
+
             switch(value%notation){
                 case (10):
-                    convertedValue += "A";
+                    temp += "A";
                     break;
                 case (11):
-                    convertedValue += "B";
+                    temp += "B";
                     break;
                 case (12):
-                    convertedValue += "C";
+                    temp += "C";
                     break;
                 case (13):
-                    convertedValue += "D";
+                    temp += "D";
                     break;
                 case (14):
-                    convertedValue += "E";
+                    temp += "E";
                     break;
                 case (15):
-                    convertedValue += "F";
+                    temp += "F";
                     break;
                 default:
-                    convertedValue += value%notation;
+                    temp += value%notation;
             }
             value /= notation;
         }
-        convertedValue = changeDirection(convertedValue);
+        return changeDirection(temp);
     }
 
     private String changeDirection( String changedValue){

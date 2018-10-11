@@ -1,3 +1,5 @@
+package com.epam.task1_1.view;
+
 /**
  * Created by maild on 05.10.2018.
  */

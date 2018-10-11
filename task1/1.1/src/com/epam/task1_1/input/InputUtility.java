@@ -1,3 +1,7 @@
+package com.epam.task1_1.input;
+
+import com.epam.task1_1.view.ConverterView;
+
 import java.util.Scanner;
 
 /**
