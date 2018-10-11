@@ -1,4 +1,4 @@
-package epam.training.practice;
+package com.epam.task1_3.model;
 
 /**
  * Created by maild on 05.10.2018.
@@ -38,22 +38,10 @@ public class MatrixModel {
         }
     }
 
-    public void displayMatrix()
-    {
-        for (int i = 0; i < N; i++)
-        {
-            for (int j = 0; j < N; j++)
-                System.out.print(" " + matrix[i][j]);
-
-            System.out.print("\n");
-        }
-        System.out.print("\n");
-    }
-
     public void fillMatrixRandom(){
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
-                matrix[i][j] = (int) (Math.random() * (10 - 5));
+                matrix[i][j] = ((int)(Math.random() * 31) - 15);
             }
 
         }

@@ -1,4 +1,6 @@
-package epam.training.practice;
+package com.epam.task1_3.input;
+
+import com.epam.task1_3.view.MatrixView;
 
 import java.util.Scanner;
 

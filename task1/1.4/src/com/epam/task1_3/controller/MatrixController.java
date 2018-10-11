@@ -1,4 +1,8 @@
-package epam.training.practice;
+package com.epam.task1_3.controller;
+
+import com.epam.task1_3.input.InputUtility;
+import com.epam.task1_3.model.MatrixModel;
+import com.epam.task1_3.view.MatrixView;
 
 /**
  * Created by maild on 05.10.2018.
@@ -12,13 +16,12 @@ public class MatrixController {
         this.view = view;
     }
 
-    public void showRotatedMatrix(){
+    public void run(){
         model.setN(InputUtility.inputValueWithScanner( view, view.INPUT_INT_VALUE));
         model.setMatrix(new int [model.getN()][model.getN()]);
         model.fillMatrixRandom();
-        model.displayMatrix();
-        view.printMessage(view.OUTPUT);
+        view.printMessageAndMatrix(view.MATRIX, model.getMatrix());
         model.rotateMatrix();
-        model.displayMatrix();
+        view.printMessageAndMatrix(view.ROTATED_MATRIX, model.getMatrix());
     }
 }
