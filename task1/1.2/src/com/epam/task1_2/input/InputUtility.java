@@ -1,4 +1,6 @@
-package epam.training.practice;
+package com.epam.task1_2.input;
+
+import com.epam.task1_2.view.PerfectNumberView;
 
 import java.util.Scanner;
 
@@ -7,6 +9,7 @@ import java.util.Scanner;
  */
 public class InputUtility {
     private static Scanner sc = new Scanner(System.in);
+
     public static int inputValueWithScanner(PerfectNumberView view, String message){
         view.printMessage(message);
         while (!sc.hasNextInt()){

@@ -1,12 +1,12 @@
-package epam.training.practice;
+package com.epam.task1_2.model;
 
-import java.util.ArrayList;
 
 /**
  * Created by maild on 05.10.2018.
  */
 public class PerfectNumber {
     private int range;
+    private String perfectNumbers;
 
     public int getRange() {
         return range;
@@ -16,7 +16,16 @@ public class PerfectNumber {
         this.range = range;
     }
 
+    public String getPerfectNumbers() {
+        return perfectNumbers;
+    }
+
+    public void setPerfectNumbers(String perfectNumbers) {
+        this.perfectNumbers = perfectNumbers;
+    }
+
     public void findPerfectNumbers(){
+        perfectNumbers = "";
         for(int i = 1; i <= range; i++ ){
             int temp = 0;
             for (int j = 1; j <= i/2; j++ ){
@@ -25,7 +34,7 @@ public class PerfectNumber {
                 }
             }
             if (temp == i){
-                System.out.println(temp);
+                perfectNumbers += temp + "\n";
             }
         }
     }

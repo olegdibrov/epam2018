@@ -1,4 +1,6 @@
-package epam.training.practice;
+import com.epam.task1_2.controller.PerfectNumberController;
+import com.epam.task1_2.model.PerfectNumber;
+import com.epam.task1_2.view.PerfectNumberView;
 
 /**
  * Created by maild on 05.10.2018.
