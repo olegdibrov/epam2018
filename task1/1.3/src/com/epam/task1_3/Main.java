@@ -1,4 +1,8 @@
-package epam.training.practice;
+package com.epam.task1_3;
+
+import com.epam.task1_3.controller.PyramidController;
+import com.epam.task1_3.model.PyramidModel;
+import com.epam.task1_3.view.PyramidView;
 
 /**
  * Created by maild on 05.10.2018.

@@ -1,4 +1,4 @@
-package epam.training.practice;
+package com.epam.task1_3.view;
 
 /**
  * Created by maild on 05.10.2018.
