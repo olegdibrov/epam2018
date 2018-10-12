@@ -1,7 +1,5 @@
 package com.epam.task2_2.model.entity;
 
-import com.epam.task2_2.model.Shape;
-
 /**
  * Created by maild on 12.10.2018.
  */
@@ -25,6 +23,6 @@ public class Circle extends Shape {
     @Override
     public String toString() {
         return "Circle: " +
-                "radius=" + radius + ", shape of color=" + super.getShapeColor() + ", area =" + calcArea();
+                "radius=" + radius + ", " + super.toString();
     }
 }

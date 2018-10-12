@@ -2,7 +2,7 @@ package com.epam.task2_2.data;
 
 import com.epam.task2_2.model.entity.Circle;
 import com.epam.task2_2.model.entity.Rectangle;
-import com.epam.task2_2.model.Shape;
+import com.epam.task2_2.model.entity.Shape;
 import com.epam.task2_2.model.entity.Triangle;
 import com.epam.task2_2.model.color.Colors;
 
@@ -35,7 +35,6 @@ public class DataShapes {
                 case 2:
                     shapes[i] = new Triangle(Colors.masOfColors[randomColor], randomSide1, randomSide2);
                     break;
-
             }
 
         }

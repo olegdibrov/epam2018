@@ -2,6 +2,7 @@ package com.epam.task2_2.model;
 
 import com.epam.task2_2.model.entity.Circle;
 import com.epam.task2_2.model.entity.Rectangle;
+import com.epam.task2_2.model.entity.Shape;
 import com.epam.task2_2.model.entity.Triangle;
 
 /**

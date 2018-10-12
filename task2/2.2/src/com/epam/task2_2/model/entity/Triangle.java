@@ -1,7 +1,5 @@
 package com.epam.task2_2.model.entity;
 
-import com.epam.task2_2.model.Shape;
-
 /**
  * Created by maild on 12.10.2018.
  */
@@ -29,6 +27,6 @@ public class Triangle extends Shape {
     public String toString() {
         return "Triangle: " +
                 "side1=" + side1 +
-                ", side2=" + side2  + ", shape of color=" + super.getShapeColor() + ", "+ calcArea();
+                ", side2=" + side2  + ", " + super.toString();
     }
 }

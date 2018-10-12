@@ -1,6 +1,6 @@
 package com.epam.task2_2.comparator;
 
-import com.epam.task2_2.model.Shape;
+import com.epam.task2_2.model.entity.Shape;
 
 import java.util.Comparator;
 

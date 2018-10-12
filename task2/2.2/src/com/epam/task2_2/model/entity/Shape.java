@@ -1,4 +1,6 @@
-package com.epam.task2_2.model;
+package com.epam.task2_2.model.entity;
+
+import com.epam.task2_2.model.entity.Drawable;
 
 /**
  * Created by maild on 12.10.2018.
@@ -30,8 +32,6 @@ public abstract class Shape implements Drawable {
 
     @Override
     public String toString() {
-        return "Shape{" +
-                "shapeColor='" + shapeColor + '\'' +
-                '}';
+        return "shapeColor=" + shapeColor + ", area="  + calcArea();
     }
 }

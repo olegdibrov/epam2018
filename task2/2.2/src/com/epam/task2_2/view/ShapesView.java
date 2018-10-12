@@ -1,6 +1,6 @@
 package com.epam.task2_2.view;
 
-import com.epam.task2_2.model.Shape;
+import com.epam.task2_2.model.entity.Shape;
 
 /**
  * Created by maild on 12.10.2018.
