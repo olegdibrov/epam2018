@@ -23,7 +23,7 @@ public class ShapesView {
     public  void printMessageAndShapes(String message, Shape[] shapes) {
         System.out.println(message);
         for (Shape shape : shapes) {
-            System.out.println(shape);
+            System.out.println(shape.draw());
         }
         System.out.println("\n");
     }

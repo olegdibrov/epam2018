@@ -24,9 +24,15 @@ public class Triangle extends Shape {
     }
 
     @Override
+    public String draw() {
+        return super.draw() +  ", side1=" + side1 +
+                ", side2=" + side2  + ", " ;
+    }
+
+    @Override
     public String toString() {
-        return "Triangle: " +
-                "side1=" + side1 +
-                ", side2=" + side2  + ", " + super.toString();
+        return super.toString() +
+                ", side1=" + side1 +
+                ", side2=" + side2  + ", " ;
     }
 }

@@ -24,14 +24,14 @@ public abstract class Shape implements Drawable {
     }
 
     @Override
-    public void draw() {
-
+    public String draw() {
+        return this.getClass().getSimpleName() + ", shapeColor=" + shapeColor + ", area="  + calcArea();
     }
 
     public abstract double calcArea();
 
     @Override
     public String toString() {
-        return "shapeColor=" + shapeColor + ", area="  + calcArea();
+        return this.getClass().getSimpleName() + ", shapeColor=" + shapeColor + ", area="  + calcArea();
     }
 }

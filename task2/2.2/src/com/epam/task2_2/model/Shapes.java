@@ -28,7 +28,7 @@ public class Shapes {
     }
 
     public double getAreaByShape(int typeOfShape) {
-        int sumArea = 0;
+        double sumArea = 0;
         switch (typeOfShape) {
             case 0:
                 for (Shape shape: shapes ) {
