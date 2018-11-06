@@ -14,15 +14,22 @@ public class InputUtility {
             if (scanner.hasNext()) {
                 value = scanner.next();
                 String[] split = value.split(",");
-                int range = Integer.parseInt(split[0]);
-                int min = Integer.parseInt(split[1]);
-                int max = Integer.parseInt(split[2]);
-                if ( min < max && range > 0 && range >= (max - min)) {
-                    View.printMessage(View.SAVED);
-                    return value;
-                } else {
+                try {
+                    int range = Integer.parseInt(split[0]);
+                    int min = Integer.parseInt(split[1]);
+                    int max = Integer.parseInt(split[2]);
+
+                    if ( min < max && range > 0 && range >= (max - min)) {
+                        View.printMessage(View.SAVED);
+                        return value;
+                    } else {
+                        View.printMessage(View.ERROR);
+                    }
+                } catch (NumberFormatException | ArrayIndexOutOfBoundsException ex) {
                     View.printMessage(View.ERROR);
                 }
+
+
             }
         }
     }
