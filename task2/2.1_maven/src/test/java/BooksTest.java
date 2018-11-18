@@ -1,19 +1,17 @@
-import com.sun.org.apache.xpath.internal.operations.Bool;
 import data.DataSource;
+import data.DataSourceDefault;
 import model.Books;
 import model.entity.Book;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
 import static org.junit.jupiter.api.Assertions.*;
-import org.junit.jupiter.api.*;
+
 import service.BooksComparator;
 
 
 import java.util.Arrays;
-import java.util.Comparator;
 
 /**
  * Created by maild on 26.10.2018.
@@ -29,7 +27,7 @@ public class BooksTest {
 
     @BeforeAll
     static void init() {
-        source = new DataSource();
+        source = new DataSourceDefault();
         books = new Books();
         source.setBooks();
         arrayOfBooks = new Book [8] ;

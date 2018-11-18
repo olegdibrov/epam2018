@@ -11,6 +11,25 @@ public class BookView {
     public static final String REPEAT = "Repeat input: ";
     public static final String ERROR_NUMBER = "Error: the number is not positive.";
     public static final String ERROR_FROM_1_TO_3 = "Error: Input value from 1 to 3.";
+    public static final String ERROR = "Error";
+
+    public static final String CHOOSE_ACTION = "Choose action";
+    public static final String EXIT = "   0 - EXIT";
+    public static final String SHOW_BOOKS = "   1 - Show all books";
+    public static final String CHOOSE_SOURCE = "   2 - Choose source";
+    public static final String COMPARE_BY_AUTHOR = "   3 - Compare by author and show books";
+    public static final String GET_BY_AUTHOR = "   4 - Get books by author";
+    public static final String GET_BY_PUBLISHER = "   5 - Get books by publisher";
+    public static final String GET_BY_YEAR = "   6 - Get books later than";
+    public static final String SERIALIZE = "   7 - Save books to file (serialize)";
+    public static final String DESERIALIZE = "   8 - Open saved books from file (deserialize)";
+
+
+
+
+    public static final String CHOICE_DATA_SOURCE = "1 - Default, 2 - from File, 3 - input manual";
+
+
     public static final String RESULT = "Result: ";
     public static final String RESULT_SORTED = "Sorted result: ";
 
@@ -26,7 +45,7 @@ public class BookView {
 
 
     public static void printMessage(String message){
-        System.out.print(message);
+        System.out.println(message);
     }
 
     public  void printMessageAndBooks(String message, Book[] books) {

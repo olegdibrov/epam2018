@@ -1,6 +1,8 @@
 package model;
 
 import model.entity.Book;
+
+import java.io.Serializable;
 import java.util.Arrays;
 
 
@@ -8,7 +10,7 @@ import java.util.Arrays;
 /**
  * Created by maild on 26.10.2018.
  */
-public class Books {
+public class Books implements Serializable {
 
     private Book[] books;
 

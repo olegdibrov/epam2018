@@ -1,0 +1,6 @@
+Book1, Author1, Publisher1, 12434, 122, 333.3
+Book2, Author2, Publisher2, 1234, 1122, 933.3
+Book3, Author3, Publisher3, 124, 123, 473.3
+Book4, Author4, Publisher4, 12314, 155, 633.3
+Book5, Author5, Publisher5, 12324, 134, 413.3
+Book6, Author6, Publisher6, 12234, 167, 423.3
