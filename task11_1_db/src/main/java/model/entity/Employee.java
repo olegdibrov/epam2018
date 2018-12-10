@@ -63,7 +63,6 @@ public class Employee {
                 ", surname='" + surname + '\'' +
                 ", name='" + name + '\'' +
                 ", position='" + position + '\'' +
-                ", idDepartment='" + idDepartment + '\'' +
-                "\n";
+                ", idDepartment='" + idDepartment + '\'';
     }
 }

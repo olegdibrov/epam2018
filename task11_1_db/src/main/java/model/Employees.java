@@ -25,6 +25,10 @@ public class Employees {
         this.tasks = tasks;
     }
 
+    public void addTask(int id, String description, int employee) {
+        tasks.add(new Task(id, description, employee));
+    }
+
     @Override
     public String toString() {
         return "Employees{" +
